@@ -177,6 +177,12 @@ namespace UTTT.Ejemplo.Persona
                         this.lblErrorValidacion.Visible = true;
                         return;
                     }
+                    if (!this.sqlValidaConsulta(persona, ref mensaje))
+                    {
+                        this.lblErrorValidacion.Text = mensaje;
+                        this.lblErrorValidacion.Visible = true;
+                        return;
+                    }
                     dcGuardar.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().InsertOnSubmit(persona);
                     dcGuardar.SubmitChanges();
                     this.showMessage("El registro se agrego correctamente.");
@@ -211,6 +217,12 @@ namespace UTTT.Ejemplo.Persona
                         return;
                     }
                     if (!this.htmlInjectionValida(ref mensaje))
+                    {
+                        this.lblErrorValidacion.Text = mensaje;
+                        this.lblErrorValidacion.Visible = true;
+                        return;
+                    }
+                    if (!this.sqlValidaConsultaEditar(persona, ref mensaje))
                     {
                         this.lblErrorValidacion.Text = mensaje;
                         this.lblErrorValidacion.Visible = true;
@@ -541,6 +553,25 @@ namespace UTTT.Ejemplo.Persona
             }
             return true;
         }
-
+        public bool sqlValidaConsulta(Linq.Data.Entity.Persona _persona, ref String mensaje)
+        {
+            var persona = dcGlobal.GetTable<Linq.Data.Entity.Persona>().FirstOrDefault(p => p.strEmail == _persona.strEmail);
+            if (persona != null)
+            {
+                mensaje = "El correo ingresado ya está en uso, intenta con uno diferente";
+                return false;
+            }
+            return true;
+        }
+        public bool sqlValidaConsultaEditar(Linq.Data.Entity.Persona persona, ref String mensaje)
+        {
+            var personCount = dcGlobal.GetTable<Linq.Data.Entity.Persona>().Where(u => u.strEmail == persona.strEmail && u.id != persona.id).Count();
+            if (personCount > 0)
+            {
+                mensaje = "El correo ingresado ya está en uso, intenta con uno diferente";
+                return false;
+            }
+            return true;
+        }
     }
 }

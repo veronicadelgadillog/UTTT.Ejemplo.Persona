@@ -11,7 +11,7 @@ namespace UTTT.Ejemplo.Persona
 {
 
 
-    public partial class NuevoUsuario
+    public partial class RecuperacionContrasena
     {
 
         /// <summary>
@@ -24,24 +24,6 @@ namespace UTTT.Ejemplo.Persona
         protected global::System.Web.UI.HtmlControls.HtmlLink bootstrap_css;
 
         /// <summary>
-        /// Control ScriptManager1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
-
-        /// <summary>
-        /// Control lblAccion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAccion;
-
-        /// <summary>
         /// Control lblError.
         /// </summary>
         /// <remarks>
@@ -51,22 +33,22 @@ namespace UTTT.Ejemplo.Persona
         protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
-        /// Control ddlPersona.
+        /// Control txtCorreo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPersona;
+        protected global::System.Web.UI.WebControls.TextBox txtCorreo;
 
         /// <summary>
-        /// Control txtPersonaEditar.
+        /// Control txtPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPersonaEditar;
+        protected global::System.Web.UI.WebControls.TextBox txtPersona;
 
         /// <summary>
         /// Control txtNombreUsuario.
@@ -76,24 +58,6 @@ namespace UTTT.Ejemplo.Persona
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNombreUsuario;
-
-        /// <summary>
-        /// Control RequiredFieldValidator1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-
-        /// <summary>
-        /// Control CustomValidator1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CustomValidator CustomValidator1;
 
         /// <summary>
         /// Control txtContrasena.
@@ -159,39 +123,12 @@ namespace UTTT.Ejemplo.Persona
         protected global::System.Web.UI.WebControls.CustomValidator CustomValidator4;
 
         /// <summary>
-        /// Control ddlEstado.
+        /// Control btnReestablecerContrasena.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEstado;
-
-        /// <summary>
-        /// Control txtFechaIngreso.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaIngreso;
-
-        /// <summary>
-        /// Control cdlFechaInicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::AjaxControlToolkit.CalendarExtender cdlFechaInicio;
-
-        /// <summary>
-        /// Control btnAceptar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAceptar;
+        protected global::System.Web.UI.WebControls.Button btnReestablecerContrasena;
     }
 }

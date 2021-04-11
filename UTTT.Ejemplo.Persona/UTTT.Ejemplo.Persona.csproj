@@ -79,7 +79,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ContrasenaCorreo.aspx" />
     <Content Include="controlformato.css" />
+    <Content Include="CorreoEnviado.html" />
     <Content Include="Default.aspx" />
     <Content Include="direccion.aspx" />
     <Content Include="DireccionExtraManager.aspx" />
@@ -92,10 +94,12 @@
     <Content Include="javaScripPage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="NuevoUsuario.aspx" />
+    <Content Include="PaginaPrincipal.aspx" />
     <Content Include="PaginasErrores\Error.html" />
     <Content Include="PersonaManager.aspx" />
     <Content Include="PersonaPrincipal.aspx" />
     <Content Include="PrincipalUsuarios.aspx" />
+    <Content Include="RecuperacionContrasena.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -110,6 +114,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContrasenaCorreo.aspx.cs">
+      <DependentUpon>ContrasenaCorreo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContrasenaCorreo.aspx.designer.cs">
+      <DependentUpon>ContrasenaCorreo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -166,6 +177,13 @@
     <Compile Include="paginaMaster.Master.designer.cs">
       <DependentUpon>paginaMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="PaginaPrincipal.aspx.cs">
+      <DependentUpon>PaginaPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaPrincipal.aspx.designer.cs">
+      <DependentUpon>PaginaPrincipal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PersonaManager.aspx.cs">
       <DependentUpon>PersonaManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,6 +206,13 @@
       <DependentUpon>PrincipalUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecuperacionContrasena.aspx.cs">
+      <DependentUpon>RecuperacionContrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecuperacionContrasena.aspx.designer.cs">
+      <DependentUpon>RecuperacionContrasena.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

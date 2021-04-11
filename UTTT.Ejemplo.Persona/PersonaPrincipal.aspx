@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"/>
 </head>
 <body>
     <div class="container-fluid">
@@ -141,6 +141,11 @@
         TableName="Persona" EntityTypeName="">
     </asp:LinqDataSource>
     </form>
+            <div class="row mt-3">
+        <div class="col-md-12">
+            <a href="PaginaPrincipal.aspx">Regresar</a>
+        </div>
+    </div>
     </div>
     <script type="text/javascript">
         document.querySelector('#txtNombre').addEventListener('keyup', () => {
